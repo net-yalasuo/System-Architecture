@@ -1,0 +1,5 @@
+D:\work\vs2012\Oxcoder-Yalasuo\Model\bin\Debug\Model.dll
+D:\work\vs2012\Oxcoder-Yalasuo\Model\bin\Debug\Model.pdb
+D:\work\vs2012\Oxcoder-Yalasuo\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\work\vs2012\Oxcoder-Yalasuo\Model\obj\Debug\Model.dll
+D:\work\vs2012\Oxcoder-Yalasuo\Model\obj\Debug\Model.pdb

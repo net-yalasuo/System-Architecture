@@ -1,0 +1,15 @@
+工程说明：
+1.Oxcoder里有5个文件夹，后面都标着名字缩写，是用于我们放自己负责部分的页面。
+
+2.DBUtility 里的 SqlServerHelper.cs 是用于连接数据库的，改成自己的就行。(其他的都不改)
+
+注：资源服务器->数据连接(右键)->添加链接->服务器名->数据库名->高级。。就能看到要粘贴的部分了·
+
+3.Model 里 写实体类，只写属性和get,set方法。例：ChallengeInfo
+  IDAL 里 写接口，设计对应实体的操作方法。例：IChallenge
+  SQLServerDAL 里写数据库操作语句和 接口的实现。 例：Challenge
+  DALFactory 里的 DataAccess 里只是实例化每个 SQLServerDAL 的类。直接在 DataAccess 里添加就行。
+  BLL 里写的是中间的调用，在网页对应的cs里会调用这里的方法，从而调用其他的类。。。参照：ChallengeBusiness
+
+注：现在只是一个初步的框架，页面里我的部分有一个PersonalMain 的界面，可以运行~~ 作为参照。。
+  

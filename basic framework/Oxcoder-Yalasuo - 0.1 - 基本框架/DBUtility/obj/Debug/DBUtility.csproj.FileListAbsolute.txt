@@ -1,0 +1,5 @@
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\bin\Debug\DBUtility.dll
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\bin\Debug\DBUtility.pdb
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\obj\Debug\DBUtility.dll
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\obj\Debug\DBUtility.pdb
