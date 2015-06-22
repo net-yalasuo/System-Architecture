@@ -1,0 +1,14 @@
+D:\work\vs2012\Oxcoder-Yalasuo\IDAL\bin\Debug\IDAL.dll
+D:\work\vs2012\Oxcoder-Yalasuo\IDAL\bin\Debug\IDAL.pdb
+D:\work\vs2012\Oxcoder-Yalasuo\IDAL\bin\Debug\Model.dll
+D:\work\vs2012\Oxcoder-Yalasuo\IDAL\bin\Debug\Model.pdb
+D:\work\vs2012\Oxcoder-Yalasuo\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+D:\work\vs2012\Oxcoder-Yalasuo\IDAL\obj\Debug\IDAL.dll
+D:\work\vs2012\Oxcoder-Yalasuo\IDAL\obj\Debug\IDAL.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\bin\Debug\IDAL.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\bin\Debug\IDAL.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\bin\Debug\Model.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\bin\Debug\Model.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\obj\Debug\IDAL.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\obj\Debug\IDAL.pdb

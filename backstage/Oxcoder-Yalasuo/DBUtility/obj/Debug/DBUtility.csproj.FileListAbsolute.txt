@@ -1,0 +1,10 @@
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\bin\Debug\DBUtility.dll
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\bin\Debug\DBUtility.pdb
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\obj\Debug\DBUtility.dll
+D:\work\vs2012\Oxcoder-Yalasuo\DBUtility\obj\Debug\DBUtility.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DBUtility\obj\Debug\DBUtility.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DBUtility\obj\Debug\DBUtility.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DBUtility\bin\Debug\DBUtility.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DBUtility\bin\Debug\DBUtility.pdb

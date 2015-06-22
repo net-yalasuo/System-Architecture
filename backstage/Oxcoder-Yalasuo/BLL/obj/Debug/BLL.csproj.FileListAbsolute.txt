@@ -1,0 +1,22 @@
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\bin\Debug\BLL.dll
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\bin\Debug\BLL.pdb
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\bin\Debug\DALFactory.dll
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\bin\Debug\IDAL.dll
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\bin\Debug\Model.dll
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\bin\Debug\DALFactory.pdb
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\bin\Debug\IDAL.pdb
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\bin\Debug\Model.pdb
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\obj\Debug\BLL.dll
+D:\work\vs2012\Oxcoder-Yalasuo\BLL\obj\Debug\BLL.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\bin\Debug\BLL.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\bin\Debug\BLL.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\bin\Debug\DALFactory.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\bin\Debug\IDAL.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\bin\Debug\Model.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\bin\Debug\DALFactory.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\bin\Debug\IDAL.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\bin\Debug\Model.pdb
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\obj\Debug\BLL.dll
+C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\BLL\obj\Debug\BLL.pdb
