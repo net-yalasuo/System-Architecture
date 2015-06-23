@@ -25,3 +25,6 @@ F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\Model.pdb
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.dll
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.pdb
+D:\work\github\oxcoder\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
+D:\work\github\oxcoder\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.dll
+D:\work\github\oxcoder\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.pdb

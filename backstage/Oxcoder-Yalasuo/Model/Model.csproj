@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChallengeInfo.cs" />
+    <Compile Include="ChallengeProjectInfo.cs" />
+    <Compile Include="PersonalChallengeInfo.cs" />
     <Compile Include="PersonalInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

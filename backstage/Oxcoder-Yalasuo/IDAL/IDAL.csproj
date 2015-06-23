@@ -40,7 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IChallenge.cs" />
+    <Compile Include="IChallengeProject.cs" />
     <Compile Include="IDALPersonalInfo.cs" />
+    <Compile Include="IPersonalChallenge.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

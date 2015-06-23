@@ -16,7 +16,7 @@ namespace DALFactory
         private DataAccess() { }
 
         /*
-         * 实例化用户数据操作
+         * 实例化挑战数据操作
          * */
         public static IDAL.IChallenge CreateChallenge()
         {
@@ -28,6 +28,24 @@ namespace DALFactory
         {
             string className = "SQLServerDAL.Personal";
             return (IDAL.IDALPersonalInfo)Assembly.Load(path).CreateInstance(className);
+        }
+
+        /*
+         * 实例化挑战具体项目数据操作
+         * */
+        public static IDAL.IChallengeProject CreateChallengeProject()
+        {
+            string className = "SQLServerDAL.ChallengeProject";
+            return (IDAL.IChallengeProject)Assembly.Load(path).CreateInstance(className);
+        }
+
+        /*
+         * 实例化个人挑战数据操作
+         * */
+        public static IDAL.IPersonalChallenge CreatePersonalChallenge()
+        {
+            string className = "SQLServerDAL.PersonalChallenge";
+            return (IDAL.IPersonalChallenge)Assembly.Load(path).CreateInstance(className);
         }
 
     }

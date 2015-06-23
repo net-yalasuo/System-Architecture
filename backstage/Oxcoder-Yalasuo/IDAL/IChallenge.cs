@@ -18,11 +18,18 @@ namespace IDAL
         bool Delete(int cId);
 
         /*
-         *通过挑战ID获得课程信息
+         *通过挑战ID获得挑战信息
          *参数 挑战ID
          *返回值 ChallengeInfo对象
          */
         ChallengeInfo GetChlById(int id);
+
+        /*
+        *通过挑战的类型选择获得相关的所有挑战
+        *参数 挑战类型
+        *返回值 ChallengeInfo对象列表
+        */
+        IList<ChallengeInfo> getChallengesByType(int type);
 
     }
 }

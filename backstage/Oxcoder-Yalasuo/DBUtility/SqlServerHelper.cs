@@ -19,8 +19,12 @@ namespace DBUtility
         //Database connection strings
         //public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["SQLServerConnString"].ConnectionString;
         //public static readonly string ConnectionString = "server=(local);user id=viki;password=123456;database=viki;min pool size=4;max pool size=4;packet size=3072";
-        public static readonly string ConnectionString = "Data Source=THINKPAD-PC\\SHUANG;Initial Catalog=oxcoder_dbo;Integrated Security=True"; //自己添加链接
-         
+        
+        //爽哥的链接
+        //public static readonly string ConnectionString = "Data Source=THINKPAD-PC\\SHUANG;Initial Catalog=oxcoder_dbo;Integrated Security=True"; //自己添加链接
+        //刘琦的链接
+        public static readonly string ConnectionString = "Data Source=PC-201503201232;Initial Catalog=oxcoder;Integrated Security=True"; //自己添加链接
+        
         // Hashtable to store cached parameters
         private static Hashtable parmCache = Hashtable.Synchronized(new Hashtable());
 

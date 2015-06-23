@@ -29,5 +29,12 @@ namespace BLL
             else
                 return dal.Delete(cId);
         }
+
+        //通过挑战类型获得所有相关的挑战
+        public IList<ChallengeInfo> GetChallengesByType(int type)
+        {
+            //还不确定是否需要附加条件
+            return dal.getChallengesByType(type);
+        }
     }
 }
