@@ -21,13 +21,8 @@ namespace SQLServerDAL
         private const string SQL_GETPERSONALINFO_PERSONAL = "select * from personalinfor where pState = @State";//查询所有用户
         private const string SQL_DELETEPERSON_PERSONAL = "delete from personalinfor where pID = @Id";//删除用户
         private const string SQL_INSERT_PERSONAL = "INSERT INTO personalinfor (pName) VALUES (@Name) SELECT @@identity AS id;";
-        //===================================================================ts的结束咯~============================
-
         private const string SQL_GETONELEVEL_PERSONAL = "select wLevel from personalworth where @Worth>=wRangeFrom AND @Worth<wRangeTo;";
 
-        //private const string SQL_INSERT_CHALLENGE = "INSERT INTO challenge (cName) VALUES (@Name) SELECT @@identity AS id;";
-        //private const string SQL_SELECT_CHALLENGE = "SELECT * FROM challenge WHERE cID = @Id;";
-        //private const string SQL_DELETE_CHALLENGE = "DELETE FROM challenge WHERE cID = @Id;";
 
         private const string PARM_ID = "@Id";
         private const string PARM_NAME = "@Name";

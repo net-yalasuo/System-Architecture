@@ -8,10 +8,19 @@ using BLL;
 using IDAL;
 using Model;
 
+
 namespace Oxcoder.BackStage_ts
 {
     public partial class PersonalInfo : System.Web.UI.Page
     {
+        PersonalBusiness pb = null;
+        Model.PersonalInfo person = null;
+        List<Model.PersonalInfo> personList = null;
+        static int flag=0;
+        static string keyword = null;
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.QueryString["result"] != null)
@@ -27,11 +36,33 @@ namespace Oxcoder.BackStage_ts
                 }
 
             }
+  
 
-            PersonalBusiness pb = new PersonalBusiness();
-            Model.PersonalInfo person = pb.GetPersonByName("ts");
+            pb = new PersonalBusiness();
 
-            List<Model.PersonalInfo> personList = pb.GetAllPerson();
+            if(flag==0)
+                personList = pb.GetAllPerson();
+            else if (flag == 1)
+            {
+                 personList = new List<Model.PersonalInfo>();
+                 person = pb.GetPersonByName(keyword);//先按姓名查询
+                 if (person.personalID == 0 && person.personalLevel == 0 && person.personalAge == 0)
+                 {
+                     person = pb.GetPersonByEmail(keyword);//再按邮箱查询
+                     if (person.personalID == 0 && person.personalLevel == 0 && person.personalAge == 0)
+                     {
+                         Alert("查无此人", this);
+                         return;
+                     }
+                         
+                     else
+                         personList.Add(person);
+                 } 
+                 else
+                     personList.Add(person);
+            }
+
+
 
             for (int i = 0; i < personList.Count; i++)
             {
@@ -98,26 +129,28 @@ namespace Oxcoder.BackStage_ts
 
                 this.personalTable.Rows.Add(Row);
             }
-            /*
-            for (int i = 0; i < 3; i++)
-            {
-                TableRow Row = new TableRow();
 
-                TableCell Cell0 = new TableCell();
-                Cell0.Text = person.personalID.ToString();
-
-                TableCell Cell1 = new TableCell();
-                Cell1.Text = person.personalName;
-
-                TableCell Cell2 = new TableCell();
-                Cell2.Text = person.personalEmail;
-
-                Row.Cells.Add(Cell0);
-                Row.Cells.Add(Cell1);
-                Row.Cells.Add(Cell2);
-
-                this.personalTable.Rows.Add(Row);
-            }*/
         }
+
+        protected void showOneRecord()
+        {
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)//搜索按钮
+        {
+            keyword = TextName.Text;
+
+            flag = 1;
+            Response.AddHeader("Refresh", "0"); 
+        }
+
+        public static void Alert(string info, Page p)//弹窗
+        {
+            string script = "<script>alert('" + info + "')</script>";
+            p.ClientScript.RegisterStartupScript(p.GetType(), "", script);
+        }
+
     }
+
+    
 }

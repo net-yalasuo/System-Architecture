@@ -12,3 +12,10 @@ C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\bin\Debu
 C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
 C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\obj\Debug\IDAL.dll
 C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\IDAL\obj\Debug\IDAL.pdb
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\bin\Debug\IDAL.dll
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\bin\Debug\IDAL.pdb
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\bin\Debug\Model.dll
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\bin\Debug\Model.pdb
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\obj\Debug\IDAL.dll
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\obj\Debug\IDAL.pdb

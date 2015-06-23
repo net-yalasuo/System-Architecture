@@ -176,7 +176,6 @@
     <Content Include="BackStage_ts\js\libs\summernote.min.js" />
     <Content Include="BackStage_ts\js\styler\script.js" />
     <Content Include="BackStage_ts\PersonalInfo.aspx" />
-    <Content Include="BackStage_ts\WebForm1.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -374,13 +373,6 @@
     </Compile>
     <Compile Include="BackStage_ts\PersonalInfo.aspx.designer.cs">
       <DependentUpon>PersonalInfo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BackStage_ts\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BackStage_ts\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

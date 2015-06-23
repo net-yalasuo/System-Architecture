@@ -47,6 +47,26 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
+    <script type="text/javascript" language="javascript">
+        //得到焦点时触发事件
+        function onFocusFun(element, elementValue) {
+            if (element.value == elementValue) {
+                element.value = "";
+                element.style.color = "";
+            }
+
+        }
+        //离开输入框时触发事件
+        function onblurFun(element, elementValue) {
+
+            if (element.value == '') {
+                element.style.color = "#808080";
+                element.value = elementValue;
+            }
+
+        }
+</script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -191,8 +211,10 @@
                                 <section id="pull-right">
                                     <div style="display:inline-block;vertical-align: top;">
                                         <div class="input-group" style="width:400px;">
-                                            <input name="example-input2-group1" class="form-control" placeholder="请输入关键词，姓名、邮箱"/>
-                                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                            <asp:TextBox ID="TextName" runat="server" Width="350px" text="请输入关键词，姓名、邮箱"
+                                                OnFocus="onFocusFun(this,'请输入关键词，姓名、邮箱')" 
+                                                OnBlur="onblurFun(this,'请输入关键词，姓名、邮箱')" ></asp:TextBox>
+                                            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" />                                            
                                         </div>
                                     </div>
                                 </section>
@@ -347,6 +369,8 @@
                 
             </div><!-- /.row -->
         </div><!-- /.container -->
+
+
 
 
 
