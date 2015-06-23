@@ -11,11 +11,19 @@ namespace IDAL
     {
         /*
          * 删除用户
-         * 参数 ID
+         * 参数 用户名
          * 返回 bool
          * by ts
          */
-        bool DeletePerson(int id);
+        bool DeletePerson(string name);
+
+        /*
+         * 更新用户状态
+         * 参数 用户名
+         * 返回 bool
+         * by ts
+         */
+        bool UpdatePersonState(string name);
 
         /*
          *根据用户名查找用户

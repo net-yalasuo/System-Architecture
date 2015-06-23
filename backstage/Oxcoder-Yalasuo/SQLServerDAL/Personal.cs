@@ -19,7 +19,7 @@ namespace SQLServerDAL
         private const string SQL_GETINFOBYEMAIL_PERSONAL = "select * from personalinfor where pEmail = @Email";//按邮箱查询用户
         private const string SQL_GETINFOBYNAME_PERSONAL = "select * from personalinfor where pName = @Name";//按姓名查询用户
         private const string SQL_GETPERSONALINFO_PERSONAL = "select * from personalinfor where pState = @State";//查询所有用户
-        private const string SQL_DELETEPERSON_PERSONAL = "delete from personalinfor where pID = @Id";//删除用户
+        private const string SQL_DELETEPERSON_PERSONAL = "delete from personalinfor where pName = @Name";//删除用户
         private const string SQL_INSERT_PERSONAL = "INSERT INTO personalinfor (pName) VALUES (@Name) SELECT @@identity AS id;";
         private const string SQL_GETONELEVEL_PERSONAL = "select wLevel from personalworth where @Worth>=wRangeFrom AND @Worth<wRangeTo;";
 
@@ -146,18 +146,57 @@ namespace SQLServerDAL
          * 删除用户
          * by ts
          */
-        public bool DeletePerson(int id)
+        public bool DeletePerson(string name)
         {
             using (SqlConnection conn = new SqlConnection(SqlServerHelper.ConnectionString))
             {
                 SqlCommand cmd = new SqlCommand(SQL_DELETEPERSON_PERSONAL, conn);
 
-                SqlParameter[] challengeParms = GetClassParameters();
+                SqlParameter[] personalParms = GetClassParameters();
 
-                challengeParms[0].Value = id;
+                personalParms[1].Value = name;
 
-                cmd.Parameters.Add(challengeParms[0]);
+                cmd.Parameters.Add(personalParms[1]);
 
+                try
+                {
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    result = true;
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    ex.StackTrace.ToString();
+                    return false;
+                }
+                return result;
+            }
+        }
+
+        public bool UpdatePersonState(string name)
+        {
+            using (SqlConnection conn = new SqlConnection(SqlServerHelper.ConnectionString))
+            {
+
+                SqlCommand cmd = new SqlCommand(SQL_DELETEPERSON_PERSONAL,conn);
+
+                SqlParameter parm = new SqlParameter(PARM_NAME, SqlDbType.VarChar);
+                parm.Value = name;
+
+                SqlParameter[] sqlParas = new SqlParameter[]{                      
+                    new SqlParameter(PARM_ID, SqlDbType.Int),
+					new SqlParameter(PARM_NAME, SqlDbType.VarChar),
+                    new SqlParameter(PARM_EMAIL, SqlDbType.VarChar)
+                };
+
+                sqlParas[1].Value = name;
+                cmd.Parameters.Add(sqlParas[1]);
+
+              // foreach(SqlParameter sp in sqlParas)
+              // {
+              // cmd.Parameters.Add(sp);
+              // }
                 try
                 {
                     conn.Open();

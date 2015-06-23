@@ -63,6 +63,7 @@ namespace Oxcoder.BackStage_ts
             }
 
 
+            Button btn;
 
             for (int i = 0; i < personList.Count; i++)
             {
@@ -117,24 +118,32 @@ namespace Oxcoder.BackStage_ts
                 Row.Cells.Add(cell11);
                 //操作按钮
                 TableCell cell12 = new TableCell();
-                //cell12.
-                cell12.Text = "按钮啊啊啊";
+                btn = new Button();
+                btn.ID = i.ToString();
+                btn.Text = "屏蔽";
+                btn.Click += new System.EventHandler(this.buttonClick);
+                cell12.Controls.Add(btn);                
                 Row.Cells.Add(cell12);
 
-                //cell12.
-
-               // Response.Write("<a href=\"#\" class=\"btn btn-small btn-danger\" type=\"button\">屏蔽</a>      <a href=\"#\" class=\"btn btn-small btn-primary\" type=\"button\">详情（数据统计）</a>");
-               
-                //Response.Write("</center>");
 
                 this.personalTable.Rows.Add(Row);
             }
 
         }
 
-        protected void showOneRecord()
+        protected void buttonClick(object sender, EventArgs e)
         {
+            Button button = sender as Button;
+            int id = int.Parse(button.ID);
+            //Alert("屏蔽" + button.ID + "name"+personList[id].personalName, this);
+            PersonalBusiness personBusiness = new PersonalBusiness();
+           // personBusiness.Delete(personList[id].personalName);
+            personBusiness.UpdateState(personList[id].personalName);
+
+            flag = 0;
+            Response.AddHeader("Refresh", "0"); 
         }
+
 
         protected void Button1_Click(object sender, EventArgs e)//搜索按钮
         {

@@ -35,12 +35,21 @@ namespace BLL
          }
 
         //删除一条用户信息
-        public bool Delete(int pId)
+        public bool Delete(string name)
         {
-            if (pId < 0)
+            if (name ==null )
                 return false;
             else
-                return dal.DeletePerson(pId);
+                return dal.DeletePerson(name);
+        }
+
+        //更新用户状态
+        public bool UpdateState(string name)
+        {
+            if (name == null)
+                return false;
+            else
+                return dal.UpdatePersonState(name);
         }
     }
 }
