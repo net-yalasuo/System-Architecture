@@ -159,6 +159,8 @@
     <Content Include="BackStage_ts\fonts\icomoon\ie7\ie7.js" />
     <Content Include="BackStage_ts\fonts\icomoon\Read Me.txt" />
     <Content Include="BackStage_ts\fonts\icomoon\style.css" />
+    <Content Include="BackStage_ts\Hahaha.aspx" />
+    <Content Include="BackStage_ts\img\ali.gif" />
     <Content Include="BackStage_ts\img\qq.png" />
     <Content Include="BackStage_ts\img\sina.png" />
     <Content Include="BackStage_ts\js\libs\ace.js" />
@@ -366,6 +368,13 @@
     </Compile>
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackStage_ts\Hahaha.aspx.cs">
+      <DependentUpon>Hahaha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackStage_ts\Hahaha.aspx.designer.cs">
+      <DependentUpon>Hahaha.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackStage_ts\PersonalInfo.aspx.cs">
       <DependentUpon>PersonalInfo.aspx</DependentUpon>

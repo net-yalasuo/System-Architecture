@@ -1267,6 +1267,8 @@ body {
   position: absolute;
   top: 12px;
   width: 20px;
+    right: 914px;
+    height: 14px;
 }
 #sidebar .nav-stacked > li > a > i.pull-right {
   left: auto;
