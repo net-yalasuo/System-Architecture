@@ -32,20 +32,9 @@ namespace Oxcoder.PersonalChl_qi
             ChallengeBusiness cb = new ChallengeBusiness();
             ChallengeInfo challenge = cb.GetChl(1);
 
-           
-                TableRow Row = new TableRow();
+            this.EnterpriseName.Text = challenge.cName;
 
-                TableCell Cell0 = new TableCell();
-                Cell0.Text = 1.ToString();
 
-                TableCell Cell1 = new TableCell();
-                Cell1.Text = challenge.cName;
-
-                Row.Cells.Add(Cell0);
-                Row.Cells.Add(Cell1);
-
-                this.classTable.Rows.Add(Row);
-           
         }
     }
 }

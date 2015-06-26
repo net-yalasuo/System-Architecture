@@ -287,8 +287,44 @@
     <Content Include="BackStage_ts\fonts\icomoon\fonts\icomoon.ttf" />
     <Content Include="BackStage_ts\fonts\icomoon\fonts\icomoon.woff" />
     <Content Include="BackStage_ts\js\libs\jquery-1.11.0.min.map" />
-    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="PersonalChl_qi\PersonalMain.aspx" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\core.php" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\statistics.do" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\z_stat.php" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\1.png" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\1056.jpg" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\1062.jpg" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\1064.png" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\48.jpg" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\663.png" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\829.jpg" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\974.jpg" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\bootstrap-filestyle.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\bootstrap-select.min.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\bootstrap-switch.min.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\bootstrap.min.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\browser.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\carousel.css" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\code.png" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\history.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\index.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\jquery-1.11.0.min.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\jquery.sparkline.min.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\masnunit.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\pic.gif" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\script.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\sea.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\style.css" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\style_new.css" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\summernote.min.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\tabswitch.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\template.min.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\tmt.css" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\wlogo_sm.png" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\woo.js" />
+    <Content Include="PersonalChl_qi\PersonalMainFile\_tts_browser_center.js" />
+    <Content Include="PersonalChl_qi\Test.aspx" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
@@ -397,6 +433,13 @@
     </Compile>
     <Compile Include="PersonalChl_qi\PersonalMain.aspx.designer.cs">
       <DependentUpon>PersonalMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalChl_qi\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonalChl_qi\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

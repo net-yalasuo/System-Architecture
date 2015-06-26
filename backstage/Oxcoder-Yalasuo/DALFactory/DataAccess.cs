@@ -32,21 +32,21 @@ namespace DALFactory
 
         /*
          * 实例化挑战具体项目数据操作
-         * */
+         * 
         public static IDAL.IChallengeProject CreateChallengeProject()
         {
             string className = "SQLServerDAL.ChallengeProject";
             return (IDAL.IChallengeProject)Assembly.Load(path).CreateInstance(className);
-        }
+        }*/
 
         /*
          * 实例化个人挑战数据操作
-         * */
+         * 
         public static IDAL.IPersonalChallenge CreatePersonalChallenge()
         {
             string className = "SQLServerDAL.PersonalChallenge";
             return (IDAL.IPersonalChallenge)Assembly.Load(path).CreateInstance(className);
-        }
+        }*/
 
     }
 }
