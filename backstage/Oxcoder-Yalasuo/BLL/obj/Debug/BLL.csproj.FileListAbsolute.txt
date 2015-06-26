@@ -31,3 +31,14 @@ F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\BLL\bin\Debug\Model.pdb
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\BLL\obj\Debug\BLL.dll
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\BLL\obj\Debug\BLL.pdb
+F:\Git\Oxcoder-Yalasuo2\BLL\bin\Debug\BLL.dll
+F:\Git\Oxcoder-Yalasuo2\BLL\bin\Debug\BLL.pdb
+F:\Git\Oxcoder-Yalasuo2\BLL\bin\Debug\DALFactory.dll
+F:\Git\Oxcoder-Yalasuo2\BLL\bin\Debug\IDAL.dll
+F:\Git\Oxcoder-Yalasuo2\BLL\bin\Debug\Model.dll
+F:\Git\Oxcoder-Yalasuo2\BLL\bin\Debug\DALFactory.pdb
+F:\Git\Oxcoder-Yalasuo2\BLL\bin\Debug\IDAL.pdb
+F:\Git\Oxcoder-Yalasuo2\BLL\bin\Debug\Model.pdb
+F:\Git\Oxcoder-Yalasuo2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\Git\Oxcoder-Yalasuo2\BLL\obj\Debug\BLL.dll
+F:\Git\Oxcoder-Yalasuo2\BLL\obj\Debug\BLL.pdb

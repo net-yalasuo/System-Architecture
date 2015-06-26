@@ -127,6 +127,7 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="BackStage_ts\Administrator.aspx" />
     <Content Include="BackStage_ts\bootstrap\css\bootstrap-theme.css" />
     <Content Include="BackStage_ts\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="BackStage_ts\bootstrap\css\bootstrap.css" />
@@ -177,6 +178,7 @@
     <Content Include="BackStage_ts\js\libs\raphael-min.js" />
     <Content Include="BackStage_ts\js\libs\summernote.min.js" />
     <Content Include="BackStage_ts\js\styler\script.js" />
+    <Content Include="BackStage_ts\NewAdmin.aspx" />
     <Content Include="BackStage_ts\PersonalInfo.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
@@ -369,12 +371,26 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BackStage_ts\Administrator.aspx.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackStage_ts\Administrator.aspx.designer.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BackStage_ts\Hahaha.aspx.cs">
       <DependentUpon>Hahaha.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackStage_ts\Hahaha.aspx.designer.cs">
       <DependentUpon>Hahaha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackStage_ts\NewAdmin.aspx.cs">
+      <DependentUpon>NewAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackStage_ts\NewAdmin.aspx.designer.cs">
+      <DependentUpon>NewAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackStage_ts\PersonalInfo.aspx.cs">
       <DependentUpon>PersonalInfo.aspx</DependentUpon>

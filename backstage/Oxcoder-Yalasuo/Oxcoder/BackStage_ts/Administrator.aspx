@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PersonalInfo.aspx.cs" Inherits="Oxcoder.BackStage_ts.PersonalInfo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Administrator.aspx.cs" Inherits="Oxcoder.BackStage_ts.Administrator" %>
 
 <!DOCTYPE html>
 
@@ -47,6 +47,7 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
+
     <script type="text/javascript" language="javascript">
         //得到焦点时触发事件
         function onFocusFun(element, elementValue) {
@@ -70,9 +71,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
-
-         <div class="navbar navbar-default navbar-fixed-top">
+    
+        <div class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand hidden-sm" href="#">OXcoder后台</a>
@@ -95,169 +95,49 @@
                 <div class="col-md-10 col-md-push-2 col-sm-9 col-sm-push-3 col-no-left-padding">
                     <section id="middle">
                         <div class="col-md-12">
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <div class="stat-block stat-primary">
-                                    <div class="icon">
-                                        <b class="icon-cover"></b>
-                                        <i class="imoon imoon-list"></i>
-                                    </div>
-                                    <div class="details">
-                                        <a href="tasks.html">
-                                            <div class="number">1349</div>
-                                            <div class="description">总注册用户</div>
-                                        </a>
-                                    </div>               
-                                </div>
-                            </div><!-- /.col-xs-12 -->
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <div class="stat-block stat-primary">
-                                    <div class="icon">
-                                        <b class="icon-cover"></b>
-                                        <i class="imoon imoon-list"></i>
-                                    </div>
-                                    <div class="details">
-                                        <a href="tasks.html">
-                                            <div class="number">1349</div>
-                                            <div class="description">日活跃用户</div>
-                                        </a>
-                                    </div>               
-                                </div>
-                            </div><!-- /.col-xs-12 -->
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <div class="stat-block stat-primary">
-                                    <div class="icon">
-                                        <b class="icon-cover"></b>
-                                        <i class="imoon imoon-list"></i>
-                                    </div>
-                                    <div class="details">
-                                        <a href="tasks.html">
-                                            <div class="number">1349</div>
-                                            <div class="description">周活跃用户</div>
-                                        </a>
-                                    </div>               
-                                </div>
-                            </div><!-- /.col-xs-12 -->
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <div class="stat-block stat-primary">
-                                    <div class="icon">
-                                        <b class="icon-cover"></b>
-                                        <i class="imoon imoon-list"></i>
-                                    </div>
-                                    <div class="details">
-                                        <a href="tasks.html">
-                                            <div class="number">1349</div>
-                                            <div class="description">月活跃用户</div>
-                                        </a>
-                                    </div>               
-                                </div>
-                            </div><!-- /.col-xs-12 -->
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <div class="stat-block stat-primary">
-                                    <div class="icon">
-                                        <b class="icon-cover"></b>
-                                        <i class="imoon imoon-list"></i>
-                                    </div>
-                                    <div class="details">
-                                        <a href="tasks.html">
-                                            <div class="number">1349</div>
-                                            <div class="description">昨日注册用户</div>
-                                        </a>
-                                    </div>               
-                                </div>
-                            </div><!-- /.col-xs-12 -->
-
-
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <div class="stat-block stat-primary">
-                                    <div class="icon">
-                                        <b class="icon-cover"></b>
-                                        <i class="imoon imoon-list"></i>
-                                    </div>
-                                    <div class="details">
-                                        <a href="tasks.html">
-                                            <div class="number">1349</div>
-                                            <div class="description">昨日接受挑战次数</div>
-                                        </a>
-                                    </div>               
-                                </div>
-                            </div><!-- /.col-xs-12 -->
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <div class="stat-block stat-primary">
-                                    <div class="icon">
-                                        <b class="icon-cover"></b>
-                                        <i class="imoon imoon-list"></i>
-                                    </div>
-                                    <div class="details">
-                                        <a href="tasks.html">
-                                            <div class="number">1349</div>
-                                            <div class="description">昨日做挑战次数</div>
-                                        </a>
-                                    </div>               
-                                </div>
-                            </div><!-- /.col-xs-12 -->
-
-                            统计：
-                            1. 每周注册用户数走势图
-                            2. 每周登录用户数走势图
-                            3. 每日接受挑战数量走势图
-                            4. 每日做挑战数量走势图
-                            5. 用户编程方向统计（接受挑战方向的饼图）
-                            6. 用户薪资统计（接受挑战薪资的饼图）
-                            7. 绑定各个社交帐号比率的饼图
-                        </div>
-                        <div class="col-md-12">
                             <p runat="server" id ="resultMsg"></p>
                             <div class="div-myroademap-right-above">
                                 <section id="pull-right">
                                     <div style="display:inline-block;vertical-align: top;">
                                         <div class="input-group" style="width:400px;">
-                                            <asp:TextBox ID="TextName" runat="server" Width="350px" text="请输入关键词，姓名、邮箱"
+                                               <asp:TextBox ID="TextName" runat="server" Width="350px" Height="30" text="请输入关键词，姓名、邮箱"
                                                 OnFocus="onFocusFun(this,'请输入关键词，姓名、邮箱')" 
                                                 OnBlur="onblurFun(this,'请输入关键词，姓名、邮箱')" ></asp:TextBox>
-                                            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" />                                            
+                                            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" /> 
                                         </div>
-                                    </div>
+                                    </div>                                    
+                                    <asp:Button ID="Button2" runat="server" class="btn btn-primary pull-right" onclick="Button2_Click" Text="新建" />
+                                    
                                 </section>
-								
 
-								<asp:Table ID="personalTable" runat="server" CssClass="table table-hover">                                
+
+
+                                <asp:Table ID="adminTable" runat="server" CssClass="table table-hover">                                
                                     <asp:TableRow CssClass="">
                                         <asp:TableCell><b>ID</b></asp:TableCell>
-                                        <asp:TableCell><b>姓名</b></asp:TableCell>
-                                        <asp:TableCell><b>年龄</b></asp:TableCell>
-                                        <asp:TableCell><b>性别</b></asp:TableCell>
-                                        <asp:TableCell><b>手机</b></asp:TableCell>
-                                        <asp:TableCell><b>邮箱</b></asp:TableCell>
-                                        <asp:TableCell><b>身价</b></asp:TableCell>
-                                        <asp:TableCell><b>级别</b></asp:TableCell>
-                                        <asp:TableCell><b>技术类型</b></asp:TableCell>
-                                        <asp:TableCell><b>接受挑战数量</b></asp:TableCell>
-                                        <asp:TableCell><b>绑定社交帐号</b></asp:TableCell>
-                                        <asp:TableCell><b>更新时间</b></asp:TableCell>
+                                        <asp:TableCell><b>用户名</b></asp:TableCell>
+                                        <asp:TableCell><b>用户类型</b></asp:TableCell>
                                         <asp:TableCell><b>操作</b></asp:TableCell>
                                     </asp:TableRow>
 
                                     <asp:TableRow CssClass="">
                                         <asp:TableCell><b>206</b></asp:TableCell>
-                                        <asp:TableCell><b>asdf</b></asp:TableCell>
-                                        <asp:TableCell><b>20</b></asp:TableCell>
-                                        <asp:TableCell><b>男</b></asp:TableCell>
-                                        <asp:TableCell><b>15818177261</b></asp:TableCell>
-                                        <asp:TableCell><b>337501728@qq.com</b></asp:TableCell>
-                                        <asp:TableCell><b>8765</b></asp:TableCell>
-                                        <asp:TableCell><b>3</b></asp:TableCell>
-                                        <asp:TableCell><b>java</b></asp:TableCell>
-                                        <asp:TableCell><b>9</b></asp:TableCell>
-                                        <asp:TableCell><b>weibo，github，stackoverflow</b></asp:TableCell>
-                                        <asp:TableCell><b>2014-09-26 01:35:30</b></asp:TableCell>
+                                        <asp:TableCell><b>joncer</b></asp:TableCell>
+                                        <asp:TableCell><b>普通管理员</b></asp:TableCell>
                                         <asp:TableCell><b>
                                             <a href="#" class="btn btn-small btn-danger" type="button">屏蔽</a>
-                                            <a href="#" class="btn btn-small btn-primary" type="button">详情（数据统计）</a>
+                                        </b></asp:TableCell>
+                                    </asp:TableRow>
+
+                                    <asp:TableRow CssClass="">
+                                        <asp:TableCell><b>207</b></asp:TableCell>
+                                        <asp:TableCell><b>asdf</b></asp:TableCell>
+                                        <asp:TableCell><b>高级管理员</b></asp:TableCell>
+                                        <asp:TableCell><b>
+                                            <a href="#" class="btn btn-small btn-danger" type="button">屏蔽</a>
                                         </b></asp:TableCell>
                                     </asp:TableRow>
 				                </asp:Table>
-
-
 
                                 <section id="Section1">                    
                                     <ul class="pagination pull-right">
@@ -289,10 +169,10 @@
                                 <div id="menu-app" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="pages-app">
-                                            <li class="active"><a href="admin_user_manage.html"><b class="icon-cover"></b><i class="imoon imoon-dashboard fa-fw"></i> 个人用户管理</a></li>
+                                            <li class=""><a href="admin_user_manage.html"><b class="icon-cover"></b><i class="imoon imoon-dashboard fa-fw"></i> 个人用户管理</a></li>
                                             <li class=""><a href="admin_corp_manage.html"><b class="icon-cover"></b><i class="imoon imoon-folder fa-fw"></i> 企业用户管理</a></li>
                                             <li class=""><a href="admin_corp_pass.html"><b class="icon-cover"></b><i class="imoon imoon-drawer3 fa-fw"></i> 企业入驻审批<span class="pull-right badge badge-danger">4</span></a></li>
-                                            <li class=""><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-users fa-fw"></i>邀请码管理</asp:HyperLink></li>
+                                            <li class=""><a href="admin_user_invite.html"><b class="icon-cover"></b><i class="imoon imoon-users fa-fw"></i> 邀请码管理</a></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -306,7 +186,7 @@
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked">
                                             <li class=""><a href="admin_challenge_info.html"><b class="icon-cover"></b><i class="imoon imoon-play fa-fw"></i> 挑战信息管理</a></li>
-                                            <li class=""><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-calendar fa-fw"></i>挑战题目管理</asp:HyperLink></li>
+                                            <li class=""><a href="admin_challenge_upload.html"><b class="icon-cover"></b><i class="imoon imoon-calendar fa-fw"></i> 挑战题目管理</a></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -319,7 +199,7 @@
                                 <div id="Div2" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="Ul1">
-                                            <li class=""><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-play3 fa-fw"></i>练习场题目管理</asp:HyperLink></li>
+                                            <li class=""><a href="admin_study_upload.html"><b class="icon-cover"></b><i class="imoon imoon-play3 fa-fw"></i> 练习场题目管理</a></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -343,7 +223,7 @@
                                 <div id="Div4" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="Ul3">
-                                            <li class=""><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-bubbles fa-fw"></i>通知管理</asp:HyperLink></li>
+                                            <li class=""><a href="admin_message.html"><b class="icon-cover"></b><i class="imoon imoon-bubbles fa-fw"></i> 通知管理</a></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -355,7 +235,7 @@
                                 <div id="Div5" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="Ul4">
-                                            <li class=""><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl ="~/BackStage_ts/Administrator.aspx"><b class="icon-cover"></b><i class="imoon imoon-cogs fa-fw"></i>管理员管理</asp:HyperLink></li>
+                                            <li class="active"><a href="admin_admin.html"><b class="icon-cover"></b><i class="imoon imoon-cogs fa-fw"></i> 管理员管理</a></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -369,8 +249,6 @@
                 
             </div><!-- /.row -->
         </div><!-- /.container -->
-
-
 
 
 
@@ -403,8 +281,7 @@
         <script src="js/libs/summernote.min.js"></script>
 
         <!-- Theme script -->
-        <script src="js/styler/script.js"></script>
-
+        <script src="js/sty
 
 
 

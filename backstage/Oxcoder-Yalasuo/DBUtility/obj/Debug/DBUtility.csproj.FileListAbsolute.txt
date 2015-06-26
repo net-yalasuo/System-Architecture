@@ -8,3 +8,7 @@ C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DBUtility\obj
 C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DBUtility\obj\Debug\DBUtility.pdb
 C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DBUtility\bin\Debug\DBUtility.dll
 C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DBUtility\bin\Debug\DBUtility.pdb
+F:\Git\Oxcoder-Yalasuo2\DBUtility\bin\Debug\DBUtility.dll
+F:\Git\Oxcoder-Yalasuo2\DBUtility\bin\Debug\DBUtility.pdb
+F:\Git\Oxcoder-Yalasuo2\DBUtility\obj\Debug\DBUtility.dll
+F:\Git\Oxcoder-Yalasuo2\DBUtility\obj\Debug\DBUtility.pdb

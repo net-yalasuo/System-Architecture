@@ -23,11 +23,17 @@ namespace DALFactory
             string className = "SQLServerDAL.Challenge";
             return (IDAL.IChallenge)Assembly.Load(path).CreateInstance(className);
         }
-
+        //创建个人用户
         public static IDAL.IDALPersonalInfo CreatePersonal()
         {
             string className = "SQLServerDAL.Personal";
             return (IDAL.IDALPersonalInfo)Assembly.Load(path).CreateInstance(className);
+        }
+        //创建管理员
+        public static IDAL.IDALAdministrator CreateAdmin()
+        {
+            string className = "SQLServerDAL.Administrator";
+            return (IDAL.IDALAdministrator)Assembly.Load(path).CreateInstance(className);
         }
 
     }

@@ -19,3 +19,10 @@ F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\bin\Debug\Model.pdb
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\obj\Debug\IDAL.dll
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\IDAL\obj\Debug\IDAL.pdb
+F:\Git\Oxcoder-Yalasuo2\IDAL\bin\Debug\IDAL.dll
+F:\Git\Oxcoder-Yalasuo2\IDAL\bin\Debug\IDAL.pdb
+F:\Git\Oxcoder-Yalasuo2\IDAL\bin\Debug\Model.dll
+F:\Git\Oxcoder-Yalasuo2\IDAL\bin\Debug\Model.pdb
+F:\Git\Oxcoder-Yalasuo2\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+F:\Git\Oxcoder-Yalasuo2\IDAL\obj\Debug\IDAL.dll
+F:\Git\Oxcoder-Yalasuo2\IDAL\obj\Debug\IDAL.pdb

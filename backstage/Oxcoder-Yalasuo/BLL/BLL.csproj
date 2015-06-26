@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministratorBusiness.cs" />
     <Compile Include="ChallengeBusiness.cs" />
     <Compile Include="PersonalBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

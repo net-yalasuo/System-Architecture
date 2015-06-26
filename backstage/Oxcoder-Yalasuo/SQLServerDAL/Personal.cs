@@ -15,7 +15,7 @@ namespace SQLServerDAL
     {
 
         //================================================================以下是ts的哟~=============================
-        private const string SQL_UPDATESTATE_PERSONAL = "Update personalinfor set pState= state where pName = @Name;";//更新用户状态
+        private const string SQL_UPDATESTATE_PERSONAL = "Update personalinfor set pState= 0 where pName = @Name;";//更新用户状态
         private const string SQL_GETINFOBYEMAIL_PERSONAL = "select * from personalinfor where pEmail = @Email";//按邮箱查询用户
         private const string SQL_GETINFOBYNAME_PERSONAL = "select * from personalinfor where pName = @Name";//按姓名查询用户
         private const string SQL_GETPERSONALINFO_PERSONAL = "select * from personalinfor where pState = @State";//查询所有用户
@@ -30,8 +30,6 @@ namespace SQLServerDAL
         private const string PARM_STATE = "@State";
         private const string PARM_WORTH = "@Worth";
         private bool result = false;
-
-       // private int personalLevel;
 
         /*
          * 按邮箱查找用户
@@ -179,7 +177,7 @@ namespace SQLServerDAL
             using (SqlConnection conn = new SqlConnection(SqlServerHelper.ConnectionString))
             {
 
-                SqlCommand cmd = new SqlCommand(SQL_DELETEPERSON_PERSONAL,conn);
+                SqlCommand cmd = new SqlCommand(SQL_UPDATESTATE_PERSONAL, conn);
 
                 SqlParameter parm = new SqlParameter(PARM_NAME, SqlDbType.VarChar);
                 parm.Value = name;
