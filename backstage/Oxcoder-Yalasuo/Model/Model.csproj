@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="AdminInfo.cs" />
     <Compile Include="ChallengeInfo.cs" />
+    <Compile Include="EnterpriseManagementInfo.cs" />
     <Compile Include="PersonalInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

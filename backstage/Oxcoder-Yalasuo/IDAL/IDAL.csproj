@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="IChallenge.cs" />
     <Compile Include="IDALAdministrator.cs" />
+    <Compile Include="IDALEnterpriseManagement.cs" />
     <Compile Include="IDALPersonalInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

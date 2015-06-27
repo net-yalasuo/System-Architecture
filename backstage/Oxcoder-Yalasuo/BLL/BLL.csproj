@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="AdministratorBusiness.cs" />
     <Compile Include="ChallengeBusiness.cs" />
+    <Compile Include="EnterpriseManagementBusiness.cs" />
     <Compile Include="PersonalBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

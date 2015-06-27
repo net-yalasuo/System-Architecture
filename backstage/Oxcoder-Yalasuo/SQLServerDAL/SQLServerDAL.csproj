@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Administrator.cs" />
     <Compile Include="Challenge.cs" />
+    <Compile Include="EnterpriseManagement.cs" />
     <Compile Include="Personal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

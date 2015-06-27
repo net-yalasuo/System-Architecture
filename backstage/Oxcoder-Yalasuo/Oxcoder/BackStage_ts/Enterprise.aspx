@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NewAdmin.aspx.cs" Inherits="Oxcoder.BackStage_ts.NewAdmin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Enterprise.aspx.cs" Inherits="Oxcoder.BackStage_ts.Enterprise" %>
 
 <!DOCTYPE html>
 
@@ -45,6 +45,28 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+
+
+     <script type="text/javascript" language="javascript">
+         //得到焦点时触发事件
+         function onFocusFun(element, elementValue) {
+             if (element.value == elementValue) {
+                 element.value = "";
+                 element.style.color = "";
+             }
+
+         }
+         //离开输入框时触发事件
+         function onblurFun(element, elementValue) {
+
+             if (element.value == '') {
+                 element.style.color = "#808080";
+                 element.value = elementValue;
+             }
+
+         }
+         </script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -72,30 +94,59 @@
 
                 <div class="col-md-10 col-md-push-2 col-sm-9 col-sm-push-3 col-no-left-padding">
                     <section id="middle">
-                        <div class="col-md-4">
-                            <form action="#" method="post" class="form-bordered" onsubmit="return false;">
-                                <div class="form-group">
-                                    <label for="example-nf-email">用户名</label>
-                                    <asp:TextBox ID="AdminUserName" runat="server" Width="1000" Height="40"></asp:TextBox>
-                                </div>
-                                <div class="form-group">
-                                    <label for="example-nf-email">密码</label>
-                                    <asp:TextBox ID="AdminPassword" runat="server" Width="1000" Height="40"></asp:TextBox>
-                                </div>
-                                <div class="form-group">
-                                    
-                                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" Height="16px"  Width="163px" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
-                                    <asp:ListItem Selected="True" Value="super">超级管理员 </asp:ListItem>
-                                    <asp:ListItem Value="normal">普通管理员 </asp:ListItem>
-                                    </asp:RadioButtonList>
+                        <div class="col-md-12">
+                            <p runat="server" id ="resultMsg"></p>
+                            <div class="div-myroademap-right-above">
+                                <section id="pull-right">
+                                    <div style="display:inline-block;vertical-align: top;">
+                                        <div class="input-group" style="width:400px;">
+                                            <asp:TextBox ID="TextName" runat="server" Width="350px" Height="30" text="请输入关键词，公司名"
+                                                OnFocus="onFocusFun(this,'请输入关键词，公司名')" 
+                                                OnBlur="onblurFun(this,'请输入关键词，公司名')" ></asp:TextBox>
+                                            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" /> 
+                                        </div>
+                                    </div>
+                                </section>
 
-                                </div>
-                                <div class="form-group form-actions">
-                                    <asp:Button ID="Button1" runat="server" class="btn btn-primary" OnClick="Button1_Click" Text="生成" />
-                                </div>
-                            </form>
+
+                                <asp:Table ID="adminTable" runat="server" CssClass="table table-hover">                                
+                                    <asp:TableRow CssClass="">
+                                        <asp:TableCell><b>ID</b></asp:TableCell>
+                                        <asp:TableCell><b>公司名</b></asp:TableCell>
+                                        <asp:TableCell><b>Emaiil</b></asp:TableCell>
+                                        <asp:TableCell><b>工作地点</b></asp:TableCell>
+                                        <asp:TableCell><b>时间</b></asp:TableCell>
+                                        <asp:TableCell><b>操作</b></asp:TableCell>
+                                    </asp:TableRow>
+
+                                    <asp:TableRow CssClass="">
+                                        <asp:TableCell><b>18</b></asp:TableCell>
+                                        <asp:TableCell><b>北京稀松平常公司</b></asp:TableCell>
+                                        <asp:TableCell><b>skdjf@qq.com</b></asp:TableCell>
+                                        <asp:TableCell><b>北京</b></asp:TableCell>
+                                        <asp:TableCell><b>2014-09-23 15:05:32</b></asp:TableCell>
+                                        <asp:TableCell><b>
+                                            <a href="admin_corp_pass_info.html" class="btn btn-info" data-toggle="modal" data-target="#myModal">详情</a>
+                                            
+                                        </b></asp:TableCell>
+                                    </asp:TableRow>
+
+                                </asp:Table>
+
+
+                                <section id="Section1">                    
+                                    <ul class="pagination pull-right">
+                                        <li><a href="#">«</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                    <li><a href="#">»</a></li>
+                                    </ul>
+                                </section>
+                            </div>
                         </div>
-
 
                     </section>
                 </div><!-- /.col-md-10 -->
@@ -113,6 +164,7 @@
                                 <div id="menu-app" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="pages-app">
+                                            
                                             <li class=""><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl ="~/BackStage_ts/PersonalInfo.aspx"><b class="icon-cover"></b><i class="imoon imoon-dashboard fa-fw"></i>个人用户管理</asp:HyperLink></li>                    
                                             <li class=""><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-folder fa-fw"></i>企业用户管理</asp:HyperLink></li>
                                             <li class=""><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl ="~/BackStage_ts/Enterprise.aspx"><b class="icon-cover"></b><i class="imoon imoon-drawer3 fa-fw"></i>企业入驻审批</asp:HyperLink></li>
@@ -143,7 +195,7 @@
                                 <div id="Div2" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="Ul1">
-                                             <li class=""><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-play3 fa-fw"></i>练习场题目管理</asp:HyperLink></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-play3 fa-fw"></i>练习场题目管理</asp:HyperLink></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -167,7 +219,7 @@
                                 <div id="Div4" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="Ul3">
-                                             <li class=""><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-bubbles fa-fw"></i>通知管理</asp:HyperLink></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-bubbles fa-fw"></i>通知管理</asp:HyperLink></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -193,6 +245,52 @@
                 
             </div><!-- /.row -->
         </div><!-- /.container -->
+
+        <!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">审批</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+                <p><label for="example-nf-email">企业全称</label></p>
+                <p>了卡机第三方看</p>
+            </div>
+            <div class="form-group">
+                <p><label for="example-nf-email">注册邮箱</label></p>
+                <p>alkdsj@qq.com</p>
+            </div>
+            <div class="form-group">
+                <p><label for="example-nf-email">企业营业执照</label></p>
+                <img src="img/samples/lskdjf" style="max-height:500px;max-width:500px;">
+            </div>
+            <div class="form-group">
+                <p><label for="example-nf-email">招聘负责人联系方式</label></p>
+                <p>15100117911</p>
+            </div>
+            <div class="form-group form-actions">
+                <button type="submit" class="btn btn-primary"> 通过</button>
+                <button type="submit" class="btn"> 拒绝</button>
+            </div>
+            <div class="form-group">
+                <p><label for="example-nf-email">请输入拒绝原因</label></p>
+                <input type="email" class="form-control" id="subject" placeholder="">
+            </div>
+            <div class="form-group form-actions">
+                <button type="submit" class="btn btn-primary"> 确认</button>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -225,9 +323,7 @@
         <script src="js/libs/summernote.min.js"></script>
 
         <!-- Theme script -->
-        <script src="js/styl
-
-
+        <script src="js/styler/script.js"></script>
 
     </form>
 </body>

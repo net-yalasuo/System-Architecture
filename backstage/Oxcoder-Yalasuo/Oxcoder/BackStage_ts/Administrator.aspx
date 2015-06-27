@@ -169,10 +169,10 @@
                                 <div id="menu-app" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="pages-app">
-                                            <li class=""><a href="admin_user_manage.html"><b class="icon-cover"></b><i class="imoon imoon-dashboard fa-fw"></i> 个人用户管理</a></li>
-                                            <li class=""><a href="admin_corp_manage.html"><b class="icon-cover"></b><i class="imoon imoon-folder fa-fw"></i> 企业用户管理</a></li>
-                                            <li class=""><a href="admin_corp_pass.html"><b class="icon-cover"></b><i class="imoon imoon-drawer3 fa-fw"></i> 企业入驻审批<span class="pull-right badge badge-danger">4</span></a></li>
-                                            <li class=""><a href="admin_user_invite.html"><b class="icon-cover"></b><i class="imoon imoon-users fa-fw"></i> 邀请码管理</a></li>
+                                             <li class=""><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl ="~/BackStage_ts/PersonalInfo.aspx"><b class="icon-cover"></b><i class="imoon imoon-dashboard fa-fw"></i>个人用户管理</asp:HyperLink></li>                    
+                                            <li class=""><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-folder fa-fw"></i>企业用户管理</asp:HyperLink></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl ="~/BackStage_ts/Enterprise.aspx"><b class="icon-cover"></b><i class="imoon imoon-drawer3 fa-fw"></i>企业入驻审批</asp:HyperLink></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-users fa-fw"></i>邀请码管理</asp:HyperLink></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -185,8 +185,8 @@
                                 <div id="Div1" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked">
-                                            <li class=""><a href="admin_challenge_info.html"><b class="icon-cover"></b><i class="imoon imoon-play fa-fw"></i> 挑战信息管理</a></li>
-                                            <li class=""><a href="admin_challenge_upload.html"><b class="icon-cover"></b><i class="imoon imoon-calendar fa-fw"></i> 挑战题目管理</a></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-play fa-fw"></i>挑战信息管理</asp:HyperLink></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-calendar fa-fw"></i>挑战题目管理</asp:HyperLink></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -199,7 +199,7 @@
                                 <div id="Div2" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="Ul1">
-                                            <li class=""><a href="admin_study_upload.html"><b class="icon-cover"></b><i class="imoon imoon-play3 fa-fw"></i> 练习场题目管理</a></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-play3 fa-fw"></i>练习场题目管理</asp:HyperLink></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -211,7 +211,7 @@
                                 <div id="Div3" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="Ul2">
-                                            <li class=""><a href="admin_money.html"><b class="icon-cover"></b><i class="imoon imoon-menu2 fa-fw"></i> 收入管理</a></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-menu2 fa-fw"></i>收入管理</asp:HyperLink></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -223,7 +223,7 @@
                                 <div id="Div4" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="Ul3">
-                                            <li class=""><a href="admin_message.html"><b class="icon-cover"></b><i class="imoon imoon-bubbles fa-fw"></i> 通知管理</a></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl ="~/BackStage_ts/Hahaha.aspx"><b class="icon-cover"></b><i class="imoon imoon-bubbles fa-fw"></i>通知管理</asp:HyperLink></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
@@ -235,7 +235,7 @@
                                 <div id="Div5" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-stacked" id="Ul4">
-                                            <li class="active"><a href="admin_admin.html"><b class="icon-cover"></b><i class="imoon imoon-cogs fa-fw"></i> 管理员管理</a></li>
+                                            <li class=""><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl ="~/BackStage_ts/Administrator.aspx"><b class="icon-cover"></b><i class="imoon imoon-cogs fa-fw"></i>管理员管理</asp:HyperLink></li>
                                         </ul>
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->

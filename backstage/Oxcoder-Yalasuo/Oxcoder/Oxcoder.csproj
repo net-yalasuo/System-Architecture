@@ -152,6 +152,7 @@
     <Content Include="BackStage_ts\css\styler\signin.css" />
     <Content Include="BackStage_ts\css\styler\style.css" />
     <Content Include="BackStage_ts\css\styler\style_new.css" />
+    <Content Include="BackStage_ts\Enterprise.aspx" />
     <Content Include="BackStage_ts\fonts\font-awesome\css\font-awesome.css" />
     <Content Include="BackStage_ts\fonts\font-awesome\css\font-awesome.min.css" />
     <Content Include="BackStage_ts\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
@@ -377,6 +378,13 @@
     </Compile>
     <Compile Include="BackStage_ts\Administrator.aspx.designer.cs">
       <DependentUpon>Administrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackStage_ts\Enterprise.aspx.cs">
+      <DependentUpon>Enterprise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackStage_ts\Enterprise.aspx.designer.cs">
+      <DependentUpon>Enterprise.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackStage_ts\Hahaha.aspx.cs">
       <DependentUpon>Hahaha.aspx</DependentUpon>
