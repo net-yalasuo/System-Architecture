@@ -12,3 +12,7 @@ F:\Git\Oxcoder-Yalasuo2\DBUtility\bin\Debug\DBUtility.dll
 F:\Git\Oxcoder-Yalasuo2\DBUtility\bin\Debug\DBUtility.pdb
 F:\Git\Oxcoder-Yalasuo2\DBUtility\obj\Debug\DBUtility.dll
 F:\Git\Oxcoder-Yalasuo2\DBUtility\obj\Debug\DBUtility.pdb
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DBUtility\bin\Debug\DBUtility.dll
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DBUtility\bin\Debug\DBUtility.pdb
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DBUtility\obj\Debug\DBUtility.dll
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DBUtility\obj\Debug\DBUtility.pdb

@@ -163,6 +163,7 @@
     <Content Include="BackStage_ts\fonts\icomoon\style.css" />
     <Content Include="BackStage_ts\Hahaha.aspx" />
     <Content Include="BackStage_ts\img\ali.gif" />
+    <Content Include="BackStage_ts\img\beedo.jpg" />
     <Content Include="BackStage_ts\img\qq.png" />
     <Content Include="BackStage_ts\img\sina.png" />
     <Content Include="BackStage_ts\js\libs\ace.js" />

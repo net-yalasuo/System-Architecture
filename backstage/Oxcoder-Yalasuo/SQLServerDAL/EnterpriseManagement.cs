@@ -13,11 +13,11 @@ namespace SQLServerDAL
 {
     public class EnterpriseManagement : IDALEnterpriseManagement
     {
-        private const string SQL_UPDATESTATE_ENTERPRISE = "Update enterpriseinfor set eState= @State where eName = @Name;";//更新公司审批状态
+        private const string SQL_UPDATESTATE_ENTERPRISE = "Update enterpriseinfor set eState= 1 where eCmpName = @Name;";//更新公司审批状态
         //private const string SQL_GETINFOBYNAME_ENTERPRISE = "select * from enterpriseinfor where eCmpName = @Name";//按公司名查询
         private const string SQL_GETINFOBYNAME_ENTERPRISE = "select * from enterpriseinfor where eCmpName like '%@Name%';";//按公司名查询
         private const string SQL_GETENTERPRISEINFO_ENTERPRISE = "select * from enterpriseinfor where eState = @State";//查询所有待审批公司
-        private const string SQL_DELETEENTERPRISE_ENTERPRISE = "delete from enterpriseinfor where eName = @Name";//删除公司
+        private const string SQL_DELETEENTERPRISE_ENTERPRISE = "delete from enterpriseinfor where eCmpName = @Name";//删除公司
 
 
         private const string PARM_ID = "@Id";
@@ -67,11 +67,7 @@ namespace SQLServerDAL
         {
             using (SqlConnection conn = new SqlConnection(SqlServerHelper.ConnectionString))
             {
-
                 SqlCommand cmd = new SqlCommand(SQL_UPDATESTATE_ENTERPRISE, conn);
-
-                SqlParameter parm = new SqlParameter(PARM_NAME, SqlDbType.VarChar);
-                parm.Value = name;
 
                 SqlParameter[] sqlParas = new SqlParameter[]{                      
                     new SqlParameter(PARM_ID, SqlDbType.Int),
@@ -84,10 +80,7 @@ namespace SQLServerDAL
                 sqlParas[2].Value = state;
                 cmd.Parameters.Add(sqlParas[2]);
 
-                // foreach(SqlParameter sp in sqlParas)
-                // {
-                // cmd.Parameters.Add(sp);
-                // }
+
                 try
                 {
                     conn.Open();
@@ -125,6 +118,7 @@ namespace SQLServerDAL
                     enterpriseInfo.enterpriseName = (string)rdr[4];
                     enterpriseInfo.enterpriseState = (int)rdr[16];
                     enterpriseInfo.enterpriseArea = (string)rdr[8];
+                    enterpriseInfo.enterpriseTel = (string)rdr[6];
                     enterpriseInfo.enterpriseTime = (DateTime)rdr[17];
                 }
             }
@@ -172,6 +166,7 @@ namespace SQLServerDAL
                     enterpriseInfo.enterpriseName = (string)rdr[4];
                     enterpriseInfo.enterpriseState = (int)rdr[16];
                     enterpriseInfo.enterpriseArea = (string)rdr[8];
+                    enterpriseInfo.enterpriseTel = (string)rdr[6];
                     enterpriseInfo.enterpriseTime = (DateTime)rdr[17];                    
 
                     enterpriseList.Add(enterpriseInfo);

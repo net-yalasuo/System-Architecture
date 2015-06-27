@@ -13,6 +13,7 @@ namespace Model
         private String eEmail;//Email
         private String eArea;//地点
         private DateTime eTime;//时间
+        private String eTel;//联系电话
        
         private int eState;//状态  0-待审批 1-审批通过 2-拒绝
 
@@ -53,6 +54,13 @@ namespace Model
         {
             set { this.eTime = value; }
             get { return this.eTime; }
+        }
+
+        // 联系电话的获得与设置
+        public String enterpriseTel
+        {
+            set { this.eTel = value; }
+            get { return this.eTel; }
         }
 
         // 状态的获得与设置

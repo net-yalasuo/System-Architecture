@@ -103,7 +103,8 @@
                                             <asp:TextBox ID="TextName" runat="server" Width="350px" Height="30" text="请输入关键词，公司名"
                                                 OnFocus="onFocusFun(this,'请输入关键词，公司名')" 
                                                 OnBlur="onblurFun(this,'请输入关键词，公司名')" ></asp:TextBox>
-                                            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" /> 
+                                            <asp:Button ID="Button1" runat="server" class="btn-default" OnClick="Button1_Click" Text="搜索"/>
+                                            
                                         </div>
                                     </div>
                                 </section>
@@ -119,7 +120,7 @@
                                         <asp:TableCell><b>操作</b></asp:TableCell>
                                     </asp:TableRow>
 
-                                    <asp:TableRow CssClass="">
+                                    <asp:TableRow CssClass="" Visible="false">
                                         <asp:TableCell><b>18</b></asp:TableCell>
                                         <asp:TableCell><b>北京稀松平常公司</b></asp:TableCell>
                                         <asp:TableCell><b>skdjf@qq.com</b></asp:TableCell>
@@ -246,11 +247,7 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
 
-        <!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
+        
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -262,30 +259,24 @@
       <div class="modal-body">
         <div class="form-group">
                 <p><label for="example-nf-email">企业全称</label></p>
-                <p>了卡机第三方看</p>
+                <p><asp:Label ID="nameLabel" runat="server" Text="qwe公司"></asp:Label></p>
+                
             </div>
             <div class="form-group">
                 <p><label for="example-nf-email">注册邮箱</label></p>
-                <p>alkdsj@qq.com</p>
+                <p><asp:Label ID="emailLabel" runat="server" Text="qwe@163.com"></asp:Label></p>
             </div>
             <div class="form-group">
                 <p><label for="example-nf-email">企业营业执照</label></p>
-                <img src="img/samples/lskdjf" style="max-height:500px;max-width:500px;">
+                <img src="img/beedo.jpg" style="max-height:500px;max-width:500px;">
             </div>
             <div class="form-group">
                 <p><label for="example-nf-email">招聘负责人联系方式</label></p>
-                <p>15100117911</p>
+                <p><asp:Label ID="phoneLabel" runat="server" Text="15100117911"></asp:Label></p>
             </div>
-            <div class="form-group form-actions">
-                <button type="submit" class="btn btn-primary"> 通过</button>
-                <button type="submit" class="btn"> 拒绝</button>
-            </div>
-            <div class="form-group">
-                <p><label for="example-nf-email">请输入拒绝原因</label></p>
-                <input type="email" class="form-control" id="subject" placeholder="">
-            </div>
-            <div class="form-group form-actions">
-                <button type="submit" class="btn btn-primary"> 确认</button>
+            <div class="form-group form-actions">                
+                <asp:Button ID="Button2" class="btn btn-primary" runat="server" OnClick="Button2_Click" Text="通过" />
+                <asp:Button ID="Button3" class="btn" runat="server" OnClick="Button3_Click" Text="拒绝" />
             </div>
       </div>
     </div>
@@ -294,7 +285,6 @@
 
 
 
-        
         <!-- jQuery -->
         <script src="js/libs/jquery-1.11.0.min.js"></script>
 

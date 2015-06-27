@@ -16,6 +16,7 @@ namespace Oxcoder.BackStage_ts
         Model.EnterpriseManagementInfo enterprise = null;
         List<Model.EnterpriseManagementInfo> enterpriseList = null;
         static int flag = 0;
+        static int ID = -1;
         static string keyword = null;
 
 
@@ -96,25 +97,36 @@ namespace Oxcoder.BackStage_ts
 
         }
 
-        protected void buttonClick(object sender, EventArgs e)
+        protected void buttonClick(object sender, EventArgs e)//详情按钮
         {
             Button button = sender as Button;
             int id = int.Parse(button.ID);
-            Alert("详情" + button.ID + "name" + enterpriseList[id].enterpriseName, this);
-            AdministratorBusiness enterpriseBusiness = new AdministratorBusiness();
+            ID = id;
 
-           // enterpriseBusiness.UpdateState(enterpriseList[id].enterpriseName);
+            EnterpriseManagementBusiness enterpriseBusiness = new EnterpriseManagementBusiness();
 
-            flag = 0;
+            nameLabel.Text = enterpriseList[id].enterpriseName;
+            emailLabel.Text = enterpriseList[id].enterpriseEmail;
+            phoneLabel.Text = enterpriseList[id].enterpriseTel;
+
+            //enterpriseBusiness.UpdateState(enterpriseList[id].enterpriseName,1);
+
             //Response.AddHeader("Refresh", "0");
+
+
+            string script = "<script language='javascript'>$(document).ready(function(){$(\"#myModal\").modal('show');});</script>";
+            //string ss = "<script language='javascript'>$(\"#myModal\").modal('show');</script>";
+            this.ClientScript.RegisterStartupScript(this.GetType(), "", script);            
         }
 
 
         protected void Button1_Click(object sender, EventArgs e)//搜索按钮
         {
             keyword = TextName.Text;
-
-            flag = 1;
+            if (keyword.Equals("请输入关键词，公司名"))
+                flag = 0;
+            else
+                flag = 1;
             Response.AddHeader("Refresh", "0");
         }
 
@@ -123,5 +135,22 @@ namespace Oxcoder.BackStage_ts
             string script = "<script>alert('" + info + "')</script>";
             p.ClientScript.RegisterStartupScript(p.GetType(), "", script);
         }
+
+        protected void Button2_Click(object sender, EventArgs e)//拒绝按钮
+        {
+            EnterpriseManagementBusiness enterpriseBusiness = new EnterpriseManagementBusiness();
+            enterpriseBusiness.UpdateState(enterpriseList[ID].enterpriseName, 2);
+  
+            Response.AddHeader("Refresh", "0");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)//通过按钮
+        {
+            EnterpriseManagementBusiness enterpriseBusiness = new EnterpriseManagementBusiness();
+
+            enterpriseBusiness.UpdateState(enterpriseList[ID].enterpriseName, 1);
+            Response.AddHeader("Refresh", "0");
+        }
+
     }
 }

@@ -16,15 +16,6 @@ C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DALFactory\bi
 C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
 C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DALFactory\obj\Debug\DALFactory.dll
 C:\Users\thinkpad\Desktop\net\Oxcoder-Yalasuo - 0.1 - 基本框架\DALFactory\obj\Debug\DALFactory.pdb
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\DALFactory.dll
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\DALFactory.pdb
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\IDAL.dll
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\Model.dll
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\IDAL.pdb
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\Model.pdb
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.dll
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.pdb
 F:\Git\Oxcoder-Yalasuo2\DALFactory\bin\Debug\DALFactory.dll
 F:\Git\Oxcoder-Yalasuo2\DALFactory\bin\Debug\DALFactory.pdb
 F:\Git\Oxcoder-Yalasuo2\DALFactory\bin\Debug\IDAL.dll
@@ -34,3 +25,12 @@ F:\Git\Oxcoder-Yalasuo2\DALFactory\bin\Debug\Model.pdb
 F:\Git\Oxcoder-Yalasuo2\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
 F:\Git\Oxcoder-Yalasuo2\DALFactory\obj\Debug\DALFactory.dll
 F:\Git\Oxcoder-Yalasuo2\DALFactory\obj\Debug\DALFactory.pdb
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\DALFactory.dll
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\DALFactory.pdb
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\IDAL.dll
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\Model.dll
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\IDAL.pdb
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\bin\Debug\Model.pdb
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.dll
+F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\DALFactory\obj\Debug\DALFactory.pdb

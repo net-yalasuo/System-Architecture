@@ -237,7 +237,7 @@
                                         <asp:TableCell><b>操作</b></asp:TableCell>
                                     </asp:TableRow>
 
-                                    <asp:TableRow CssClass="">
+                                    <asp:TableRow CssClass="" Visible="false">
                                         <asp:TableCell><b>206</b></asp:TableCell>
                                         <asp:TableCell><b>asdf</b></asp:TableCell>
                                         <asp:TableCell><b>20</b></asp:TableCell>

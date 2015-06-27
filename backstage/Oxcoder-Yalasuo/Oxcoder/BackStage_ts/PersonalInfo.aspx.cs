@@ -148,8 +148,10 @@ namespace Oxcoder.BackStage_ts
         protected void Button1_Click(object sender, EventArgs e)//搜索按钮
         {
             keyword = TextName.Text;
-
-            flag = 1;
+            if (keyword.Equals("请输入关键词，姓名、邮箱"))
+                flag = 0;
+            else
+                flag = 1;
             Response.AddHeader("Refresh", "0"); 
         }
 

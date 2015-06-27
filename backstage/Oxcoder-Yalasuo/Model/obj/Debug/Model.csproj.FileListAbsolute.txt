@@ -14,6 +14,5 @@ F:\Git\Oxcoder-Yalasuo2\Model\obj\Debug\Model.dll
 F:\Git\Oxcoder-Yalasuo2\Model\obj\Debug\Model.pdb
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\Model\bin\Debug\Model.dll
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\Model\bin\Debug\Model.pdb
-F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\Model\obj\Debug\Model.dll
 F:\Git\Github\net-code\backstage\Oxcoder-Yalasuo\Model\obj\Debug\Model.pdb

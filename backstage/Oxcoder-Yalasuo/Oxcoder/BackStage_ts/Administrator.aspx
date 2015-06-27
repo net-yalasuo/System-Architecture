@@ -120,7 +120,7 @@
                                         <asp:TableCell><b>操作</b></asp:TableCell>
                                     </asp:TableRow>
 
-                                    <asp:TableRow CssClass="">
+                                    <asp:TableRow CssClass="" Visible="false">
                                         <asp:TableCell><b>206</b></asp:TableCell>
                                         <asp:TableCell><b>joncer</b></asp:TableCell>
                                         <asp:TableCell><b>普通管理员</b></asp:TableCell>
@@ -129,7 +129,7 @@
                                         </b></asp:TableCell>
                                     </asp:TableRow>
 
-                                    <asp:TableRow CssClass="">
+                                    <asp:TableRow CssClass="" Visible="false">
                                         <asp:TableCell><b>207</b></asp:TableCell>
                                         <asp:TableCell><b>asdf</b></asp:TableCell>
                                         <asp:TableCell><b>高级管理员</b></asp:TableCell>
